@@ -6,13 +6,13 @@
 |-----------------|-------------------|-----------------------------------------------|
 | Jason Emmanuel  | AI Engineer | [linkedin.com/in/jasoneml](https://www.linkedin.com/in/jasoneml/) |
 
-📄 **Docu LLM** is an interactive document question-answering tool that allows users to upload PDF files and ask questions based on their content. It combines powerful AI models with a simple interface, enabling users to quickly extract relevant information without manually searching through lengthy documents.
+📄 **Docu LLM** is an AI-powered document question-answering application that enables users to upload a PDF file and ask natural language questions about its content. Instead of manually scanning through long and complex documents, users can simply interact with the system to get contextually accurate answers drawn directly from the uploaded file. This makes it especially useful for tasks like reviewing academic papers, analyzing business reports, or understanding legal documents.
 
-The application uses IBM Watsonx Foundation Models for both language generation and semantic text embeddings. When a PDF is uploaded, the document is split into smaller text chunks, which are then converted into vector representations. These vectors are stored in a vector database to enable efficient retrieval of relevant information.
+At the core of the application is IBM Watsonx’s suite of foundation models. The language generation is powered by the Mixtral model hosted on Watsonx, which can generate high-quality responses based on retrieved context. For understanding and organizing the document, the system uses Watsonx’s embedding model to convert text chunks into numerical representations (embeddings), which are stored in a vector database for efficient semantic search. This allows the system to find and prioritize the most relevant portions of the document when answering a question.
 
-When a user submits a question, the system searches the most relevant chunks from the uploaded document and passes them to a language model to generate a context-aware answer. This retrieval-augmented generation (RAG) approach ensures that answers are grounded in the actual document content, improving both accuracy and relevance.
+The document is first processed using LangChain’s document loaders and split into smaller, overlapping text chunks for improved context retention. These chunks are embedded and indexed using the Chroma vector store. When a question is asked, the system uses a Retrieval-Augmented Generation (RAG) approach—retrieving relevant chunks and feeding them to the language model for answer generation. This architecture ensures that answers remain grounded in the actual document content while maintaining conversational fluency.
 
-Gradio is used to build the web-based interface, offering a smooth and user-friendly experience. With just a few clicks, users can upload a PDF, type a question, and receive an intelligent response. Docu LLM is ideal for students, researchers, and professionals who need quick insights from dense or technical documents.
+The user interface is built with Gradio, offering a clean and accessible web interface where users can upload a PDF, type in their questions, and receive answers in seconds. The application also includes custom styling for a modern, professional look. Docu LLM demonstrates how large language models, when combined with retrieval systems and user-friendly interfaces, can create powerful tools for information extraction, learning, and productivity.
 
 ---
 
