@@ -6,7 +6,7 @@
 |-----------------|-------------------|-----------------------------------------------|
 | Jason Emmanuel  | AI Engineer | [linkedin.com/in/jasoneml](https://www.linkedin.com/in/jasoneml/) |
 
-📄 **DocuLLM** is an interactive document question-answering application that allows users to upload a PDF file and ask questions based on the content of the uploaded document. It leverages IBM Watsonx Foundation Models for natural language understanding and embeddings, combined with LangChain for document processing and retrieval, and Gradio for the web-based user interface.
+📄 **Docu LLM** is an interactive document question-answering application that allows users to upload a PDF file and ask questions based on the content of the uploaded document. It leverages IBM Watsonx Foundation Models for natural language understanding and embeddings, combined with LangChain for document processing and retrieval, and Gradio for the web-based user interface.
 
 ---
 
