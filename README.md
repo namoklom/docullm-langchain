@@ -1,4 +1,4 @@
-# DocuLLM (LangChain and LLM-based QA Bot from Loaded Documents)
+# Docu LLM (LangChain and LLM-based QA Bot from Loaded Documents)
 
 ## 👤 Author
 
@@ -24,7 +24,19 @@
 
 ## 📱 Application Overview
 
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/d07f0403-78f7-4283-9d64-2485dad43e45" />
 
+The web front end of Docu LLM features a clean and user-friendly interface designed for interacting with the content of uploaded PDF documents. On the left side, users can upload a PDF file by either dragging and dropping it or clicking the designated upload area. To the right, there is a text box labeled "Ask a Question," where users can type any question they want to ask based on the uploaded document. Once both the PDF and the question are provided, clicking the orange "Get Answer" button will trigger the system to analyze the content and display the answer in the "Answer" section below. This setup enables users to easily explore and extract information from research papers or other complex documents.
+
+<img width="959" alt="Screenshot 2025-06-06 134317" src="https://github.com/user-attachments/assets/c1f52faa-ecba-4bd4-aa2b-e5defe5f713a" />
+
+In this step, a user is selecting and uploading a scientific research paper titled "Fine-tuning Pretrained Multilingual BERT Model for Indonesian Aspect-based Sentiment Analysis" to the Docu LLM web application. The upload is done by navigating through the file explorer window and choosing the appropriate PDF file, shown here as 2103.03732v1.
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/efbb2a70-64f4-4e18-bbaf-9a929867f8d1" />
+
+After uploading the scientific research paper file in .pdf extension, a sample question is entered, such as: "Explain how the sentence-pair classification approach using auxiliary pseudo-sentences improves the performance of the ABSA task compared to single-sentence classification, and why this approach is more compatible with BERT’s pretraining architecture." The app then processes the PDF and provides an answer based on the content of the uploaded document.
+
+---
 
 ## 📜 Code Overview
 
@@ -65,4 +77,4 @@
 ```bash
 git clone https://github.com/namoklom/docullm-langchain.git
 cd docullm-langchain
-'''
+```
